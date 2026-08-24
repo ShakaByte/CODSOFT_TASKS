@@ -116,7 +116,7 @@ class MainActivity : ComponentActivity() {
                     val savedName = UserPreferences.getName(context).first()
                     val onboardingDone = UserPreferences.isOnboardingDone(context).first()
                     userName = savedName
-                    startDestination = if (onboardingDone) "home" else "welcome"
+                    startDestination = if (savedName.isNotBlank() && onboardingDone) "home" else "welcome"
                 }
 
                 if (startDestination == null) {
