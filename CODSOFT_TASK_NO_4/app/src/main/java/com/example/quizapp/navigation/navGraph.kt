@@ -9,6 +9,7 @@ import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import androidx.navigation.navArgument
 import com.example.quizapp.data.SessionManager
+import com.example.quizapp.ui.screens.HistoryScreen
 import com.example.quizapp.ui.screens.LoginScreen
 import com.example.quizapp.ui.screens.HomeScreen
 import com.example.quizapp.ui.screens.QuizScreen
@@ -52,6 +53,9 @@ fun NavGraph() {
             val category = backStackEntry.arguments?.getString("category") ?: ""
             val difficulty = backStackEntry.arguments?.getString("difficulty") ?: ""
             ResultScreen(navController, score, total, category, difficulty)
+        }
+        composable("history") {
+            HistoryScreen(navController, sessionManager)
         }
     }
 }
