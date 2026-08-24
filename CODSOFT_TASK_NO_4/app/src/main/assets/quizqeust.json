@@ -1,0 +1,574 @@
+{
+  "categories": [
+    {
+      "name": "Electronics",
+      "questions": [
+        {
+          "difficulty": "easy",
+          "question": "What is the unit of electrical resistance?",
+          "options": ["Volt", "Ampere", "Ohm", "Watt"],
+          "correctAnswer": "Ohm"
+        },
+        {
+          "difficulty": "easy",
+          "question": "Which component stores electrical energy in an electric field?",
+          "options": ["Resistor", "Capacitor", "Diode", "Transistor"],
+          "correctAnswer": "Capacitor"
+        },
+        {
+          "difficulty": "easy",
+          "question": "What does LED stand for?",
+          "options": [
+            "Light Emitting Diode",
+            "Low Energy Device",
+            "Light Energy Display",
+            "Linear Emitting Device"
+          ],
+          "correctAnswer": "Light Emitting Diode"
+        },
+        {
+          "difficulty": "easy",
+          "question": "Which device is commonly used to measure voltage?",
+          "options": ["Ammeter", "Voltmeter", "Ohmmeter", "Wattmeter"],
+          "correctAnswer": "Voltmeter"
+        },
+        {
+          "difficulty": "easy",
+          "question": "What is the purpose of a switch in a circuit?",
+          "options": [
+            "To store electricity",
+            "To open or close the circuit",
+            "To increase resistance",
+            "To convert AC to DC"
+          ],
+          "correctAnswer": "To open or close the circuit"
+        },
+        {
+          "difficulty": "medium",
+          "question": "What is the main function of a diode?",
+          "options": [
+            "To allow current to flow mainly in one direction",
+            "To store magnetic energy",
+            "To amplify sound",
+            "To measure resistance"
+          ],
+          "correctAnswer": "To allow current to flow mainly in one direction"
+        },
+        {
+          "difficulty": "medium",
+          "question": "According to Ohm's law, what is the relationship between voltage, current, and resistance?",
+          "options": [
+            "V = I × R",
+            "V = I + R",
+            "I = V × R",
+            "R = V × I"
+          ],
+          "correctAnswer": "V = I × R"
+        },
+        {
+          "difficulty": "medium",
+          "question": "Which component is commonly used to amplify or switch electronic signals?",
+          "options": ["Fuse", "Transistor", "Capacitor", "Transformer"],
+          "correctAnswer": "Transistor"
+        },
+        {
+          "difficulty": "medium",
+          "question": "What type of current periodically changes direction?",
+          "options": [
+            "Direct current",
+            "Alternating current",
+            "Constant current",
+            "Static current"
+          ],
+          "correctAnswer": "Alternating current"
+        },
+        {
+          "difficulty": "medium",
+          "question": "What is the purpose of a fuse in an electrical circuit?",
+          "options": [
+            "To increase voltage",
+            "To protect the circuit from excessive current",
+            "To store electrical charge",
+            "To convert DC into AC"
+          ],
+          "correctAnswer": "To protect the circuit from excessive current"
+        },
+        {
+          "difficulty": "hard",
+          "question": "What does a rectifier circuit do?",
+          "options": [
+            "Converts AC into DC",
+            "Converts DC into AC",
+            "Increases resistance",
+            "Stores electrical charge"
+          ],
+          "correctAnswer": "Converts AC into DC"
+        },
+        {
+          "difficulty": "hard",
+          "question": "In a series circuit, what remains the same through every component?",
+          "options": ["Voltage", "Current", "Resistance", "Power"],
+          "correctAnswer": "Current"
+        },
+        {
+          "difficulty": "hard",
+          "question": "What is the approximate forward voltage of a typical silicon diode?",
+          "options": ["0.1 V", "0.7 V", "2.5 V", "12 V"],
+          "correctAnswer": "0.7 V"
+        },
+        {
+          "difficulty": "hard",
+          "question": "Which logic gate produces an output of 1 only when all its inputs are 1?",
+          "options": ["OR gate", "NOT gate", "AND gate", "XOR gate"],
+          "correctAnswer": "AND gate"
+        },
+        {
+          "difficulty": "hard",
+          "question": "What is the primary purpose of a transformer?",
+          "options": [
+            "To change AC voltage levels",
+            "To convert AC to DC",
+            "To store digital data",
+            "To measure current"
+          ],
+          "correctAnswer": "To change AC voltage levels"
+        }
+      ]
+    },
+    {
+      "name": "Computer Science",
+      "questions": [
+        {
+          "difficulty": "easy",
+          "question": "What does CPU stand for?",
+          "options": [
+            "Central Processing Unit",
+            "Computer Personal Unit",
+            "Central Program Utility",
+            "Control Processing User"
+          ],
+          "correctAnswer": "Central Processing Unit"
+        },
+        {
+          "difficulty": "easy",
+          "question": "Which language is primarily used to structure web pages?",
+          "options": ["HTML", "SQL", "Python", "C++"],
+          "correctAnswer": "HTML"
+        },
+        {
+          "difficulty": "easy",
+          "question": "What is a set of instructions given to a computer called?",
+          "options": ["Algorithm", "Pixel", "Protocol", "Database"],
+          "correctAnswer": "Algorithm"
+        },
+        {
+          "difficulty": "easy",
+          "question": "Which device is used to enter text into a computer?",
+          "options": ["Monitor", "Keyboard", "Speaker", "Printer"],
+          "correctAnswer": "Keyboard"
+        },
+        {
+          "difficulty": "easy",
+          "question": "What does URL stand for?",
+          "options": [
+            "Uniform Resource Locator",
+            "Universal Reading Link",
+            "User Reference Location",
+            "Unified Resource Language"
+          ],
+          "correctAnswer": "Uniform Resource Locator"
+        },
+        {
+          "difficulty": "medium",
+          "question": "Which data structure follows the Last-In, First-Out principle?",
+          "options": ["Queue", "Stack", "Tree", "Graph"],
+          "correctAnswer": "Stack"
+        },
+        {
+          "difficulty": "medium",
+          "question": "What is the binary representation of the decimal number 5?",
+          "options": ["อยู่101", "110", "111", "100"],
+          "correctAnswer": "101"
+        },
+        {
+          "difficulty": "medium",
+          "question": "Which SQL command is used to retrieve data from a database?",
+          "options": ["INSERT", "SELECT", "UPDATE", "DELETE"],
+          "correctAnswer": "SELECT"
+        },
+        {
+          "difficulty": "medium",
+          "question": "What is an operating system?",
+          "options": [
+            "A program that manages computer hardware and software resources",
+            "A type of computer virus",
+            "A programming language",
+            "A web browser"
+          ],
+          "correctAnswer": "A program that manages computer hardware and software resources"
+        },
+        {
+          "difficulty": "medium",
+          "question": "Which of these is an example of a high-level programming language?",
+          "options": ["Python", "Machine code", "Binary", "Assembly language"],
+          "correctAnswer": "Python"
+        },
+        {
+          "difficulty": "hard",
+          "question": "What is the average time complexity of binary search on a sorted array?",
+          "options": ["O(1)", "O(log n)", "O(n)", "O(n²)"],
+          "correctAnswer": "O(log n)"
+        },
+        {
+          "difficulty": "hard",
+          "question": "Which principle is associated with hiding internal implementation details in object-oriented programming?",
+          "options": ["Inheritance", "Encapsulation", "Polymorphism", "Recursion"],
+          "correctAnswer": "Encapsulation"
+        },
+        {
+          "difficulty": "hard",
+          "question": "What is a deadlock in an operating system?",
+          "options": [
+            "A situation where processes wait indefinitely for resources held by one another",
+            "A system shutdown caused by low battery",
+            "A failed internet connection",
+            "A program that finishes successfully"
+          ],
+          "correctAnswer": "A situation where processes wait indefinitely for resources held by one another"
+        },
+        {
+          "difficulty": "hard",
+          "question": "Which protocol is primarily used to securely transfer web pages?",
+          "options": ["HTTP", "HTTPS", "FTP", "SMTP"],
+          "correctAnswer": "HTTPS"
+        },
+        {
+          "difficulty": "hard",
+          "question": "What is the main purpose of a hash function?",
+          "options": [
+            "To map data to a fixed-size value",
+            "To display graphics",
+            "To increase monitor brightness",
+            "To physically store files"
+          ],
+          "correctAnswer": "To map data to a fixed-size value"
+        }
+      ]
+    },
+    {
+      "name": "Traditional Indian Food",
+      "questions": [
+        {
+          "difficulty": "easy",
+          "question": "Which grain is commonly used to make dosa?",
+          "options": ["Rice", "Wheat", "Barley", "Corn"],
+          "correctAnswer": "Rice"
+        },
+        {
+          "difficulty": "easy",
+          "question": "What is the main ingredient in paneer?",
+          "options": ["Milk", "Rice", "Lentils", "Potatoes"],
+          "correctAnswer": "Milk"
+        },
+        {
+          "difficulty": "easy",
+          "question": "Samosa is usually filled with spiced vegetables and what other common ingredient?",
+          "options": ["Potato", "Apple", "Chocolate", "Fish"],
+          "correctAnswer": "Potato"
+        },
+        {
+          "difficulty": "easy",
+          "question": "Which Indian bread is commonly cooked in a clay tandoor?",
+          "options": ["Naan", "Puri", "Thepla", "Appam"],
+          "correctAnswer": "Naan"
+        },
+        {
+          "difficulty": "easy",
+          "question": "What is dal primarily made from?",
+          "options": ["Lentils", "Rice", "Milk", "Coconut"],
+          "correctAnswer": "Lentils"
+        },
+        {
+          "difficulty": "medium",
+          "question": "Which spice gives many Indian dishes a yellow color?",
+          "options": ["Turmeric", "Cardamom", "Clove", "Cinnamon"],
+          "correctAnswer": "Turmeric"
+        },
+        {
+          "difficulty": "medium",
+          "question": "Biryani is primarily a dish made with rice and what?",
+          "options": ["Spices and vegetables or meat", "Only sugar", "Only fruit", "Bread and cheese"],
+          "correctAnswer": "Spices and vegetables or meat"
+        },
+        {
+          "difficulty": "medium",
+          "question": "Which South Indian dish is made from fermented rice and lentil batter?",
+          "options": ["Dosa", "Kheer", "Rogan josh", "Litti"],
+          "correctAnswer": "Dosa"
+        },
+        {
+          "difficulty": "medium",
+          "question": "What is chutney commonly served with?",
+          "options": [
+            "Snacks and meals as a condiment",
+            "Only desserts",
+            "Tea as a sweetener",
+            "Raw grains before cooking"
+          ],
+          "correctAnswer": "Snacks and meals as a condiment"
+        },
+        {
+          "difficulty": "medium",
+          "question": "Which dessert is made by cooking rice with milk and sugar?",
+          "options": ["Kheer", "Jalebi", "Gulab jamun", "Barfi"],
+          "correctAnswer": "Kheer"
+        },
+        {
+          "difficulty": "hard",
+          "question": "What is the traditional base of Gujarati dhokla?",
+          "options": ["Fermented gram flour batter", "Wheat noodles", "Rice pudding", "Mashed potatoes"],
+          "correctAnswer": "Fermented gram flour batter"
+        },
+        {
+          "difficulty": "hard",
+          "question": "Which ingredient is traditionally used to make the Bengali dessert rasgulla?",
+          "options": ["Chhena", "Besan", "Semolina", "Tamarind"],
+          "correctAnswer": "Chhena"
+        },
+        {
+          "difficulty": "hard",
+          "question": "What is the main ingredient in the Kashmiri dish rogan josh?",
+          "options": ["Meat", "Rice", "Lentils", "Paneer"],
+          "correctAnswer": "Meat"
+        },
+        {
+          "difficulty": "hard",
+          "question": "Which fermented ingredient is essential in many traditional South Indian dishes such as idli?",
+          "options": ["Rice and black gram batter", "Wheat and milk batter", "Corn and potato batter", "Chickpea and sugar batter"],
+          "correctAnswer": "Rice and black gram batter"
+        },
+        {
+          "difficulty": "hard",
+          "question": "What is the primary ingredient of traditional Rajasthani dal baati churma?",
+          "options": [
+            "Lentils, wheat balls, and crushed sweetened wheat",
+            "Rice, fish, and coconut",
+            "Potatoes, spinach, and cream",
+            "Corn, cheese, and tomatoes"
+          ],
+          "correctAnswer": "Lentils, wheat balls, and crushed sweetened wheat"
+        }
+      ]
+    },
+    {
+      "name": "Sports",
+      "questions": [
+        {
+          "difficulty": "easy",
+          "question": "How many players does a soccer team have on the field at one time?",
+          "options": ["7", "9", "11", "13"],
+          "correctAnswer": "11"
+        },
+        {
+          "difficulty": "easy",
+          "question": "Which sport uses a bat, ball, and wickets?",
+          "options": ["Cricket", "Tennis", "Hockey", "Volleyball"],
+          "correctAnswer": "Cricket"
+        },
+        {
+          "difficulty": "easy",
+          "question": "How many rings are on the Olympic flag?",
+          "options": ["4", "5", "6", "7"],
+          "correctAnswer": "5"
+        },
+        {
+          "difficulty": "easy",
+          "question": "In which sport would you perform a slam dunk?",
+          "options": ["Basketball", "Golf", "Swimming", "Boxing"],
+          "correctAnswer": "Basketball"
+        },
+        {
+          "difficulty": "easy",
+          "question": "What is the object hit by players in badminton called?",
+          "options": ["Puck", "Shuttlecock", "Ball", "Disc"],
+          "correctAnswer": "Shuttlecock"
+        },
+        {
+          "difficulty": "medium",
+          "question": "How many points is a touchdown worth in American football before the extra point attempt?",
+          "options": ["3", "6", "7", "10"],
+          "correctAnswer": "6"
+        },
+        {
+          "difficulty": "medium",
+          "question": "In tennis, what score comes after  deuce when a player wins the next point?",
+          "options": ["Advantage", "Match point", "Love", "Set point"],
+          "correctAnswer": "Advantage"
+        },
+        {
+          "difficulty": "medium",
+          "question": "How long is a standard Olympic swimming pool?",
+          "options": ["25 meters", "40 meters", "50 meters", "100 meters"],
+          "correctAnswer": "50 meters"
+        },
+        {
+          "difficulty": "medium",
+          "question": "Which country is traditionally associated with the martial art of judo?",
+          "options": ["Japan", "Brazil", "France", "Canada"],
+          "correctAnswer": "Japan"
+        },
+        {
+          "difficulty": "medium",
+          "question": "In cricket, how many legal deliveries are there in a standard over?",
+          "options": ["4", "5", "6", "8"],
+          "correctAnswer": "6"
+        },
+        {
+          "difficulty": "hard",
+          "question": "In chess, which piece can move in an L-shaped pattern?",
+          "options": ["Bishop", "Knight", "Rook", "Queen"],
+          "correctAnswer": "Knight"
+        },
+        {
+          "difficulty": "hard",
+          "question": "What is the maximum score possible with three darts in one turn in darts?",
+          "options": ["120", "150", "180", "200"],
+          "correctAnswer": "180"
+        },
+        {
+          "difficulty": "hard",
+          "question": "In volleyball, how many players from each team are on the court during regular play?",
+          "options": ["5", "6", "7", "8"],
+          "correctAnswer": "6"
+        },
+        {
+          "difficulty": "hard",
+          "question": "What is the term for three strikes in a row in bowling?",
+          "options": ["Turkey", "Eagle", "Hat-trick", "Triple"],
+          "correctAnswer": "Turkey"
+        },
+        {
+          "difficulty": "hard",
+          "question": "In Formula One, what color flag signals the end of a race?",
+          "options": ["Red", "Yellow", "Green", "Chequered"],
+          "correctAnswer": "Chequered"
+        }
+      ]
+    },
+    {
+      "name": "Video Games",
+      "questions": [
+        {
+          "difficulty": "easy",
+          "question": "What is the name of Nintendo's famous Italian plumber?",
+          "options": ["Mario", "Link", "Kirby", "Samus"],
+          "correctAnswer": "Mario"
+        },
+        {
+          "difficulty": "easy",
+          "question": "Which game features building with blocks and mining resources?",
+          "options": ["Minecraft", "Tetris", "FIFA", "Pac-Man"],
+          "correctAnswer": "Minecraft"
+        },
+        {
+          "difficulty": "easy",
+          "question": "Which character is the main hero of The Legend of Zelda series?",
+          "options": ["Link", "Zelda", "Ganondorf", "Mario"],
+          "correctAnswer": "Link"
+        },
+        {
+          "difficulty": "easy",
+          "question": "In which game do players arrange falling blocks into complete lines?",
+          "options": ["Tetris", "Fortnite", "Overwatch", "Pokémon"],
+          "correctAnswer": "Tetris"
+        },
+        {
+          "difficulty": "easy",
+          "question": "What is the primary objective in Pac-Man?",
+          "options": [
+            "Eat pellets while avoiding ghosts",
+            "Build a city",
+            "Race cars",
+            "Rescue a princess using a sword"
+          ],
+          "correctAnswer": "Eat pellets while avoiding ghosts"
+        },
+        {
+          "difficulty": "medium",
+          "question": "Which company developed the Pokémon video game series?",
+          "options": ["Game Freak", "Valve", "Electronic Arts", "Ubisoft"],
+          "correctAnswer": "Game Freak"
+        },
+        {
+          "difficulty": "medium",
+          "question": "What is the name of the battle royale game developed by Epic Games?",
+          "options": ["Fortnite", "Dota 2", "Portal", "The Sims"],
+          "correctAnswer": "Fortnite"
+        },
+        {
+          "difficulty": "medium",
+          "question": "In the Pokémon games, what type is Pikachu?",
+          "options": ["Fire", "Water", "Electric", "Grass"],
+          "correctAnswer": "Electric"
+        },
+        {
+          "difficulty": "medium",
+          "question": "Which game series features the character Master Chief?",
+          "options": ["Halo", "God of War", "Final Fantasy", "Street Fighter"],
+          "correctAnswer": "Halo"
+        },
+        {
+          "difficulty": "medium",
+          "question": "What genre best describes games such as StarCraft and Age of Empires?",
+          "options": [
+            "Real-time strategy",
+            "First-person shooter",
+            "Sports simulation",
+            "Platformer"
+          ],
+          "correctAnswer": "Real-time strategy"
+        },
+        {
+          "difficulty": "hard",
+          "question": "Which video game company created the Unreal Engine?",
+          "options": ["Epic Games", "Nintendo", "Sega", "Atari"],
+          "correctAnswer": "Epic Games"
+        },
+        {
+          "difficulty": "hard",
+          "question": "In Dark Souls, what resource is commonly used to level up the player character?",
+          "options": ["Souls", "Rings", "Rupees", "Gil"],
+          "correctAnswer": "Souls"
+        },
+        {
+          "difficulty": "hard",
+          "question": "Which game is widely known for popularizing the first-person shooter genre in the 1990s?",
+          "options": ["Doom", "The Sims", "Civilization", "Mortal Kombat"],
+          "correctAnswer": "Doom"
+        },
+        {
+          "difficulty": "hard",
+          "question": "In League of Legends, what is the main competitive map called?",
+          "options": [
+            "Summoner's Rift",
+            "King's Canyon",
+            "Dust II",
+            "The Nether"
+          ],
+          "correctAnswer": "Summoner's Rift"
+        },
+        {
+          "difficulty": "hard",
+          "question": "Which game series is associated with the fictional continent of Tamriel?",
+          "options": [
+            "The Elder Scrolls",
+            "Mass Effect",
+            "Diablo",
+            "Resident Evil"
+          ],
+          "correctAnswer": "The Elder Scrolls"
+        }
+      ]
+    }
+  ]
+}

@@ -64,6 +64,16 @@ import androidx.compose.foundation.layout.width
 import androidx.compose.material.icons.automirrored.filled.ArrowBack
 import androidx.compose.material.icons.automirrored.filled.ExitToApp
 import androidx.compose.foundation.lazy.items
+import androidx.compose.material3.DatePicker
+import androidx.compose.material3.DatePickerDialog
+import androidx.compose.material3.rememberDatePickerState
+import androidx.compose.material3.TextButton
+import java.text.SimpleDateFormat
+import java.util.Locale
+import java.util.Date
+import androidx.compose.material3.DatePickerDefaults
+import kotlinx.coroutines.flow.first
+
 @Entity(tableName = "tasks")
 data class Task(
     @PrimaryKey(autoGenerate = true)
@@ -103,13 +113,10 @@ class MainActivity : ComponentActivity() {
                     scope.launch { snackbarHostState.showSnackbar(message) }
                 }
                 LaunchedEffect(Unit) {
-                    combine(
-                    UserPreferences.getName(context),
-                    UserPreferences.isOnboardingDone(context)
-                    ){ savedName, onBoardingDone ->
-                        userName = savedName
-                        startDestination = if (onBoardingDone) "home" else "welcome"
-                    }.collect{}
+                    val savedName = UserPreferences.getName(context).first()
+                    val onboardingDone = UserPreferences.isOnboardingDone(context).first()
+                    userName = savedName
+                    startDestination = if (onboardingDone) "home" else "welcome"
                 }
 
                 if (startDestination == null) {
@@ -138,8 +145,15 @@ class MainActivity : ComponentActivity() {
                                 userName = name
                                 scope.launch {
                                     UserPreferences.saveName(context, name)
+                                    val alreadyOnboarded = UserPreferences.isOnboardingDone(context).first()
+                                    if (alreadyOnboarded) {
+                                        navController.navigate("home") {
+                                            popUpTo("welcome") { inclusive = true }
+                                        }
+                                    } else {
+                                        navController.navigate("purpose")
+                                    }
                                 }
-                                navController.navigate("purpose")
                             })
                         }
 
@@ -467,6 +481,8 @@ fun AddTaskScreen(
     var description by remember { mutableStateOf(existingTask?.description ?: "") }
     var selectedPriority by remember { mutableStateOf(existingTask?.priority ?: Priority.LOW) }
     var dueDate by remember { mutableStateOf(existingTask?.dueDate ?: "") }
+    var showDatePicker by remember { mutableStateOf(false) }
+    val datePickerState = rememberDatePickerState()
 
     Scaffold(
         topBar = {
@@ -497,8 +513,51 @@ fun AddTaskScreen(
 
             Spacer(modifier = Modifier.height(16.dp))
 
-            Text(text = "Due Date (e.g. 2026-08-25)", fontWeight = FontWeight.Bold)
-            OutlinedTextField(value = dueDate, onValueChange = { dueDate = it }, modifier = Modifier.fillMaxWidth())
+            Text(text = "Due Date", fontWeight = FontWeight.Bold)
+            OutlinedTextField(
+                value = dueDate,
+                onValueChange = {},
+                readOnly = true,
+                placeholder = { Text("Select a date") },
+                trailingIcon = {
+                    IconButton(onClick = { showDatePicker = true }) {
+                        Icon(
+                            Icons.Default.DateRange,
+                            contentDescription = "Pick date",
+                            tint = MaterialTheme.colorScheme.primary
+                        )
+                    }
+                },
+                shape = RoundedCornerShape(12.dp),
+                modifier = Modifier.fillMaxWidth()
+            )
+
+            if (showDatePicker) {
+                DatePickerDialog(
+                    onDismissRequest = { showDatePicker = false },
+                    shape = RoundedCornerShape(20.dp),
+                    confirmButton = {
+                        TextButton(onClick = {
+                            datePickerState.selectedDateMillis?.let { millis ->
+                                val formatter = SimpleDateFormat("yyyy-MM-dd", Locale.getDefault())
+                                dueDate = formatter.format(Date(millis))
+                            }
+                            showDatePicker = false
+                        }) { Text("OK") }
+                    },
+                    dismissButton = {
+                        TextButton(onClick = { showDatePicker = false }) { Text("Cancel") }
+                    }
+                ) {
+                    DatePicker(
+                        state = datePickerState,
+                        colors = DatePickerDefaults.colors(
+                            selectedDayContainerColor = MaterialTheme.colorScheme.primary,
+                            todayDateBorderColor = MaterialTheme.colorScheme.primary
+                        )
+                    )
+                }
+            }
 
             Spacer(modifier = Modifier.height(24.dp))
 
