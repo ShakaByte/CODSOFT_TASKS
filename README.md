@@ -45,11 +45,6 @@ This repo contains three separate Android projects, one per folder. Each app is 
 3. Let Gradle sync
 4. Run on an emulator or a physical device
 
-```
-📸 Screenshots
-
-[Add 1-2 screenshots per app, optional]
-```
 ## 👤 Author
 
 **Vedant Pokale** ([ShakaByte](https://github.com/ShakaByte))
